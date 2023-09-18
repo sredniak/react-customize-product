@@ -9,20 +9,11 @@ const OptionColor = ({ colors, currentColor, setCurrentColor }) => {
     ];
   };
 
-  // const uniqueNameColors = [...new Set(colors)];
-
-  /** 
-filter() method to create a uniqueNameColors array that contains only those colors
- whose index is equal to the index of the first occurrence of that color in the colors array. */
-  const uniqueNameColors = colors.filter(
-    (color, index) => colors.indexOf(color) === index
-  );
-
   return (
     <div className={styles.colors}>
       <h3 className={styles.optionLabel}>Colors</h3>
       <ul className={styles.choices}>
-        {uniqueNameColors.map((color) => (
+        {colors.map((color) => (
           <li key={color}>
             <button
               onClick={() => setCurrentColor(color)}

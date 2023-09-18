@@ -28,7 +28,7 @@ const productsData = [
   {
     id: 3,
     name: 'react2',
-    title: 'React2 shirt',
+    title: 'React% shirt',
     basePrice: 18,
     colors: ['red', 'blue', 'green'],
     sizes: [
